@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oliver Zureick | Portfolio</title>
+  <meta
+    name="description"
+    content="Photography, design, and sports media work by Oliver Zureick."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <h1>Oliver Zureick</h1>
+        <p class="tagline">Photography • Design • Sports Media</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="jquery.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-top">
+      <div class="container page-top-inner">
+        <div>
+          <p class="section-label">Selected Work</p>
+          <h2>Photography and design built around sports storytelling.</h2>
+          <p class="page-intro-text">
+            This page brings together live sports coverage, detail-driven photography,
+            and graphic work built for promotion, identity, and storytelling.
+          </p>
+        </div>
+
+        <button id="hidePortfolioBtn" class="btn btn-secondary" type="button">Toggle Summary</button>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="portfolioSummary" class="panel-box">
+        <h2>Portfolio Overview</h2>
+        <p>
+          My portfolio is built around range. I want to show strong live-action work,
+          more creative storytelling, and designs that can actually be used by teams,
+          athletes, and media outlets.
+        </p>
+        <p>
+          The goal is not just to show that I can take pictures. It’s to show that I can
+          build a full body of work that feels professional, consistent, and useful in real
+          sports media settings.
+        </p>
+      </div>
+
+      <div class="filter-bar">
+        <div>
+          <p class="section-label">Browse Work</p>
+          <h2>Filter by category</h2>
+        </div>
+
+        <div class="button-row">
+          <button class="filter-btn" data-filter="all" type="button">Show All</button>
+          <button class="filter-btn" data-filter="photo" type="button">Photos</button>
+          <button class="filter-btn" data-filter="graphic" type="button">Graphics</button>
+        </div>
+      </div>
+
+      <section class="portfolio-hierarchy-grid">
+        <article class="portfolio-tile portfolio-xl filter-item photo">
+          <img
+            class="materialboxed"
+            src="22.jpeg"
+            alt="Pitcher throwing from the mound"
+            data-caption="Baseball Action — mechanics, timing, and stronger in-game composition."
+          />
+          <span class="category-tag">Baseball</span>
+          <div class="tile-caption">
+            <h3>Baseball Action</h3>
+            <p>Mechanics, timing, and stronger in-game composition.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-lg filter-item graphic">
+          <img
+            class="materialboxed"
+            src="24.jpeg"
+            alt="Football commitment graphic"
+            data-caption="Commitment Graphic — typography, athlete cutouts, and stronger visual energy."
+          />
+          <span class="category-tag">Design</span>
+          <div class="tile-caption">
+            <h3>Commitment Graphic</h3>
+            <p>Typography, athlete cutouts, and stronger visual energy.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-md filter-item photo">
+          <img
+            class="materialboxed"
+            src="21.jpeg"
+            alt="Baseball player walking on the field"
+            data-caption="Pregame Detail — a cleaner sports image that adds personality and atmosphere."
+          />
+          <span class="category-tag">Baseball</span>
+          <div class="tile-caption">
+            <h3>Pregame Detail</h3>
+            <p>A cleaner sports image that adds personality and atmosphere.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-md filter-item photo">
+          <img
+            class="materialboxed"
+            src="23.jpeg"
+            alt="Baseball hitter waiting on a pitch"
+            data-caption="At The Plate — built around anticipation, spacing, and tension."
+          />
+          <span class="category-tag">Baseball</span>
+          <div class="tile-caption">
+            <h3>At The Plate</h3>
+            <p>Built around anticipation, spacing, and tension.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-lg filter-item photo">
+          <img
+            class="materialboxed"
+            src="27.jpg"
+            alt="Swim team holding state championship trophy"
+            data-caption="Team Championship — emotion-driven coverage centered on achievement and identity."
+          />
+          <span class="category-tag">Swimming</span>
+          <div class="tile-caption">
+            <h3>Team Championship</h3>
+            <p>Emotion-driven coverage centered on achievement and identity.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-md filter-item photo">
+          <img
+            class="materialboxed"
+            src="28.jpeg"
+            alt="Swimmer on medal stand"
+            data-caption="Podium Moment — documentary-style storytelling in a championship setting."
+          />
+          <span class="category-tag">Swimming</span>
+          <div class="tile-caption">
+            <h3>Podium Moment</h3>
+            <p>Documentary-style storytelling in a championship setting.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-md filter-item photo">
+          <img
+            class="materialboxed"
+            src="26.jpg"
+            alt="Swimmer on starting block"
+            data-caption="Ready To Go — preparation, intensity, and pre-race tension."
+          />
+          <span class="category-tag">Swimming</span>
+          <div class="tile-caption">
+            <h3>Ready To Go</h3>
+            <p>Preparation, intensity, and pre-race tension.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-md filter-item photo">
+          <img
+            class="materialboxed"
+            src="29.jpeg"
+            alt="Swimmer portrait after race"
+            data-caption="Post-Race Portrait — a tighter image that adds range beyond the action itself."
+          />
+          <span class="category-tag">Swimming</span>
+          <div class="tile-caption">
+            <h3>Post-Race Portrait</h3>
+            <p>A tighter image that adds range beyond the action itself.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-md filter-item photo">
+          <img
+            class="materialboxed"
+            src="30.jpeg"
+            alt="Swimmers celebrating with medals"
+            data-caption="Celebration — built around confidence, personality, and energy."
+          />
+          <span class="category-tag">Swimming</span>
+          <div class="tile-caption">
+            <h3>Celebration</h3>
+            <p>Built around confidence, personality, and energy.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-sm filter-item photo">
+          <img
+            class="materialboxed"
+            src="25.jpeg"
+            alt="Black and white close-up detail"
+            data-caption="Detail Shot — a more artistic image that helps the portfolio feel less one-dimensional."
+          />
+          <span class="category-tag">Detail</span>
+          <div class="tile-caption">
+            <h3>Detail Shot</h3>
+            <p>A more artistic image that helps the portfolio feel less one-dimensional.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-sm filter-item graphic">
+          <img
+            class="materialboxed"
+            src="14.png"
+            alt="Basketball gameday graphic"
+            data-caption="Basketball Graphic — promotional design built for attention and branding."
+          />
+          <span class="category-tag">Basketball</span>
+          <div class="tile-caption">
+            <h3>Basketball Graphic</h3>
+            <p>Promotional design built for attention and branding.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-sm filter-item graphic">
+          <img
+            class="materialboxed"
+            src="17.png"
+            alt="Swimming recognition graphic"
+            data-caption="Recognition Graphic — achievement-based design built for pride and impact."
+          />
+          <span class="category-tag">Design</span>
+          <div class="tile-caption">
+            <h3>Recognition Graphic</h3>
+            <p>Achievement-based design built for pride and impact.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-sm filter-item photo">
+          <img
+            class="materialboxed"
+            src="31.png"
+            alt="Additional portfolio image 31"
+            data-caption="Additional Work — extra portfolio image."
+          />
+          <span class="category-tag">Portfolio</span>
+          <div class="tile-caption">
+            <h3>Additional Work</h3>
+            <p>Extra image added to expand the portfolio range.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-tile portfolio-sm filter-item photo">
+          <img
+            class="materialboxed"
+            src="32.png"
+            alt="Additional portfolio image 32"
+            data-caption="Additional Work — extra portfolio image."
+          />
+          <span class="category-tag">Portfolio</span>
+          <div class="tile-caption">
+            <h3>Additional Work</h3>
+            <p>Extra image added to expand the portfolio range.</p>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Oliver Zureick</h3>
+        <p>Photography and design built around sports media.</p>
+      </div>
+
+      <div>
+        <p><strong>Email:</strong> zureicof@miamioh.edu</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
